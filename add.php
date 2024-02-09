@@ -37,21 +37,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
-            <div class="form-group">
-                <label for="telefone">Telefone:</label>
-                <input type="text" class="form-control telefone" id="telefone" name="telefone" required>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control telefone" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" class="form-control cpf" id="cpf" name="cpf" required>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="cpf">CPF:</label>
-                <input type="text" class="form-control cpf" id="cpf" name="cpf" required>
-            </div>
-            <div class="form-group">
-                <label for="cep">CEP:</label>
-                <input type="text" class="form-control cep" id="cep" name="cep" required>
-            </div>
-            <div class="form-group">
-                <label for="disciplina">Disciplina:</label>
-                <input type="text" class="form-control" id="disciplina" name="disciplina" required>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cep">CEP:</label>
+                    <input type="text" class="form-control cep" id="cep" name="cep" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="disciplina">Disciplina:</label>
+                    <input type="text" class="form-control" id="disciplina" name="disciplina" required>
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Adicionar</button>
         </form>

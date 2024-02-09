@@ -16,34 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `professores`
+-- Table structure for table `disciplinas`
 --
 
-DROP TABLE IF EXISTS `professores`;
+DROP TABLE IF EXISTS `disciplinas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `professores` (
+CREATE TABLE `disciplinas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `disciplina` varchar(100) NOT NULL,
-  `telefone` varchar(20) NOT NULL,
-  `cpf` varchar(14) NOT NULL,
-  `cep` varchar(10) NOT NULL,
-  `disciplina_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `disciplina_id` (`disciplina_id`),
-  CONSTRAINT `professores_ibfk_1` FOREIGN KEY (`disciplina_id`) REFERENCES `disciplinas` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `professores`
+-- Dumping data for table `disciplinas`
 --
 
-LOCK TABLES `professores` WRITE;
-/*!40000 ALTER TABLE `professores` DISABLE KEYS */;
-/*!40000 ALTER TABLE `professores` ENABLE KEYS */;
+LOCK TABLES `disciplinas` WRITE;
+/*!40000 ALTER TABLE `disciplinas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `disciplinas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

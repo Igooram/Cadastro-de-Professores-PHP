@@ -1,6 +1,6 @@
-/********************************************************************************
-Estilo Css */
+/* estilo.css */
 
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -46,8 +46,7 @@ h2 {
     background-color: #e2e6ea;
 }
 
-
-
+/* Estilos responsivos */
 /* Para telas pequenas (celulares) */
 @media (max-width: 576px) {
     .td-nome,

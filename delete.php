@@ -8,8 +8,9 @@ if (!isset($_GET['id'])) {
 
 $id = $_GET['id'];
 
-$stmt = $pdo->prepare('DELETE FROM professores WHERE id = ?');
-$stmt->execute([$id]);
+// Excluir o registro do professor
+$stmtDeleteProfessor = $pdo->prepare('DELETE FROM professores WHERE id = ?');
+$stmtDeleteProfessor->execute([$id]);
 
 header('Location: index.php');
 ?>

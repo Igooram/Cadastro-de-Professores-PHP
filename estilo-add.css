@@ -1,4 +1,4 @@
-/* estilo-add Professor.css */
+/* estilo-add.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -50,4 +50,38 @@ button[type="submit"]:hover {
 .error-message {
     color: #dc3545;
     font-size: 14px;
+}
+
+/* Adicionando estilos para os novos campos */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-group input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.input-group input[type="text"]:invalid {
+    border-color: #dc3545;
+}
+
+.input-group input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.input-group input[type="text"]:hover::placeholder {
+    color: #777;
 }
